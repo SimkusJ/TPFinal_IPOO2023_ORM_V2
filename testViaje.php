@@ -130,18 +130,6 @@ function eliminarEmpresa()
         $viajesEmpresa = $empresa->getViajes();
 
 
-        // if (count($viajesEmpresa) !== null) {
-
-        // echo "La Empresa seleccionada cuenta con viajes anexados a ella, no puede ser eliminada, primero elimine los viajes.";
-
-
-        /**
-         * Voy a dejar esto comentado porque es mi intento de hacer la eliminacion en cascada, lo intente de varias maneras pero no 
-         * consegui hacer que funcionara y tampoco pude contactar via discord con las profesoras para solucionarlo, si esto aun esta comentado
-         * cuando lo suba al github es porque no consegui solucionarlo. 
-         */
-
-
         if (count($viajesEmpresa) !== null) {
             echo "La empresa seleccionada tiene viajes asociados, se eliminaran con ella ¿seguro que desea eliminarlos? \n";
             $respuesta = trim(fgets(STDIN));
